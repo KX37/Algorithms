@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab1
-build_property.ProjectDir = C:\Users\gamel\source\repos\Lab1\Lab1\
+build_property.ProjectDir = C:\GitReps\Temp\Algorithms\Lab1\Lab1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

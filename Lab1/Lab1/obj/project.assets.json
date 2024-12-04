@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gamel\\source\\repos\\Lab1\\Lab1\\Lab1.csproj",
+      "projectUniqueName": "C:\\GitReps\\Temp\\Algorithms\\Lab1\\Lab1\\Lab1.csproj",
       "projectName": "Lab1",
-      "projectPath": "C:\\Users\\gamel\\source\\repos\\Lab1\\Lab1\\Lab1.csproj",
+      "projectPath": "C:\\GitReps\\Temp\\Algorithms\\Lab1\\Lab1\\Lab1.csproj",
       "packagesPath": "C:\\Users\\gamel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gamel\\source\\repos\\Lab1\\Lab1\\obj\\",
+      "outputPath": "C:\\GitReps\\Temp\\Algorithms\\Lab1\\Lab1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
