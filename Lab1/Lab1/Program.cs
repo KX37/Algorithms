@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 class Program
@@ -39,7 +38,7 @@ class Program
     // Interpolation Search
     public static int InterpolationSearch(int[] data, int target, out int comparisons)
     {
-        comparisons = 0;
+        comparisons = 1;
         int left = 0, right = data.Length - 1;
         while (left <= right && target >= data[left] && target <= data[right])
         {
@@ -68,7 +67,7 @@ class Program
         Random rand = new Random();
         int[] arr = new int[size];
         for (int i = 0; i < size; i++)
-            arr[i] = rand.Next(maxValue);
+            arr[i] = rand.Next(1, maxValue + 1); // Генерация чисел от 1 до maxValue
         return arr;
     }
 
@@ -80,23 +79,27 @@ class Program
 
         foreach (int size in sizes)
         {
-            int[] data = GenerateRandomArray(size, size * 10);
+            int[] data = GenerateRandomArray(size, size);
             int[] sortedData = (int[])data.Clone();
             Array.Sort(sortedData);
 
-            int target = data[rand.Next(size)];
+            // Генерация случайного индекса и целевого значения
+            int randomIndex = rand.Next(size);
+            int target = data[randomIndex];
+
+            Console.WriteLine($"Array Size: {size}, Target Value: {target}");
 
             // Linear Search
             LinearSearch(data, target, out int linearComparisons);
-            Console.WriteLine($"Size: {size} Linear Search Comparisons: {linearComparisons}");
+            Console.WriteLine($"Linear Search Comparisons: {linearComparisons}");
 
             // Binary Search
             BinarySearch(sortedData, target, out int binaryComparisons);
-            Console.WriteLine($"Size: {size} Binary Search Comparisons: {binaryComparisons}");
+            Console.WriteLine($"Binary Search Comparisons: {binaryComparisons}");
 
             // Interpolation Search
             InterpolationSearch(sortedData, target, out int interpolationComparisons);
-            Console.WriteLine($"Size: {size} Interpolation Search Comparisons: {interpolationComparisons}");
+            Console.WriteLine($"Interpolation Search Comparisons: {interpolationComparisons}");
             Console.WriteLine("--------------------------------------");
         }
     }
